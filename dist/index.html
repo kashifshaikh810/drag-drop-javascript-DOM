@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>#drop-container div, 
+    #drag-container div{
+        display: flex;
+        width: 130px;
+        height: 130px;
+        margin-left: 15px;
+    }
+
+    #drag-container{
+        display: flex;
+    }
+
+    #drop-container{
+        margin-top: 15px;
+        display: flex;
+    }
+
+    #drop-container div{
+        border: 1px solid #ccc;
+    }
+
+    #drop-container div.drop-select{
+        border: 1px dashed red;
+    }
+
+    .image-1{
+        background: url("/image1.c99f29b7.jpg");
+        cursor: pointer;
+    }
+
+    .image-2{
+        background: url("/image2.b83c9975.jpg");
+        cursor: pointer;
+    }
+
+    .dragging{
+        opacity: 0.2;
+    }</style>
+  </head>
+  <body>
+    <section id="drag-container">
+      <div data-image="image-1" draggable="true" class="image-1"></div>
+      <div data-image="image-2" draggable="true" class="image-2"></div>
+    </section>
+
+    <section id="drop-container">
+      <div></div>
+      <div></div>
+    </section>
+    
+    <script src="/drag-drop-html5.e31bb0bc.js"></script>
+  </body>
+</html>
